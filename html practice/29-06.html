@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <style>
+        body {
+            margin: 20px;
+            padding: 20px;
+            border-color: #c81a1a;
+            background-color: rgb(135, 164, 222);
+        }
+
+        .container {
+            margin: 40px;
+            background: #c5b6b6;
+            padding: 30px 60px;
+        }
+
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+
+        }
+
+        .nav-links a {
+            color: black;
+            font-size: 15px;
+        }
+
+        .buttons {
+            
+            margin-left: 20px;
+            background: white;
+
+        }
+
+        .buttons .login {
+            background: #cbbc10;
+        }
+
+        .bdc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .bdc-text {
+            width: 50%;
+        }
+
+
+        .bdc-image img {
+            width: 420px;
+        }
+
+        .menu-section {
+            margin-top: 70px;
+        }
+
+        .menu {
+            display: flex;
+
+            margin: 40px;
+            align-items: center;
+
+
+        }
+
+        .menu-buttons {
+            padding: 20px 25px;
+            margin-left: 40px;
+            border-radius: 20px;
+            background: white;
+
+        }
+
+        .menu-buttons .active {
+            background: #f5b333;
+
+        }
+
+
+        .food-items {
+            display: flex;
+            gap: 40px;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+    
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo"> Food </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#foods">Foods</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="buttons">
+                <button>Sing in</button>
+                <button>Sing Up</button>
+                <button class="login">Login</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="bdc">
+
+            <div class="bdc-text">
+                <h1>Discover Our Delectable Delights Menu</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur.
+                    Montes ultricies pharetra donec posuere
+                    sollicitudin habitant nons..
+                </p>
+
+                <button>Oder now</button>
+            </div>
+
+            <div class="bdc-image">
+                <img src="../html practice/kfc.webp" alt="food">
+            </div>
+
+        </div>
+
+
+        <div class="menu-section">
+
+            <div class="menu">
+
+                <div class="menu-text">
+                    <h2>Our Food Menu</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur.<br>
+                        Tempus massa mauris tellus eu.
+                    </p>
+                </div>
+
+                <div class="menu-buttons">
+                    <button class="active">All</button>
+                    <button>Breakfast</button>
+                    <button>Dinner</button>
+                    <button>Lunch</button>
+                </div>
+
+            </div>
+
+            <div class="food-items">
+
+                <div class="card">
+                    <img src="../html practice/burger.jpg" alt="">
+
+                    <h4>Burger</h4>
+
+                </div>
+
+                <div class="card">
+                    <img src="../html practice/pizza.webp" alt="">
+                    <h4>PIZZA</h4>
+                </div>
+                <div class="card">
+                    <img src="../html practice/FREERPC.jpg" alt="">
+                    <h4>FRENCH FRIES</h4>
+                </div>
+
+                <div class="card">
+                    <img src="../html practice/kfc-extra-crispy-chicken-combo-440nw-593683b.jpg" alt="">
+                    <h4>Crispy Chicken</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
