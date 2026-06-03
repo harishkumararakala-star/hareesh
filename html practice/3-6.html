@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>likedin profile</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+body{
+    background:#a28585;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:50px;
+    gap:40px;
+}
+
+/* Card 1 */
+.card{
+    width:480px;
+    background:#e9e6e6;
+    border-radius:25px;
+    text-align:center;
+    padding:40px;
+    align-items: center;
+    
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+
+.profile-img img{
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    text-align: center;
+}
+
+.heading{
+   
+    background:#eef4f9;
+    color:#333;
+    padding:10px 10px;
+    border-radius:5px;
+    margin-top:15px;
+    
+}
+
+h2{
+    margin-top:20px;
+    color:#16db23;
+    
+}
+
+.desc{
+    color:#888;
+    margin-bottom:25px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    font-size: 40px;
+    padding: 20px;
+    
+}
+
+
+
+.message{
+    background:white;
+    border:2px solid #26265c;
+    color:#26265c;
+}
+
+.connect{
+    background:#26265c;
+    color:white;
+    
+}
+
+/* Card 2 */
+.info-card{
+    width:480px;
+    background:#fff;
+    border-radius:25px;
+    padding:30px;
+    text-align: center;
+    
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.small-profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.small-profile img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.stats{
+    display:flex;
+    gap:40px;
+}
+
+
+
+.stats h3{
+    color:#26265c;
+}
+
+.profile-info{
+    margin-top:20px;
+    text-align: left;
+}
+
+.about{
+    margin-top:20px;
+    text-align: left;
+}
+
+.about h3{
+    color:#26265c;
+    margin-bottom:10px;
+}
+
+.about p{
+    color:#777;
+    
+}
+</style>
+</head>
+
+<body>
+
+<!-- Profile Card -->
+<div class="card">
+
+    <div class="profile-img">
+        <img src="../html practice/boy.jpg" alt="">
+    </div>
+
+    <div class="heading">ULTRA MAX PRO</div>
+
+    <h2>tom cruise</h2>
+    <div class="role">UI / UX Designer</div>
+
+    <p class="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid expedita velit delectus, voluptas eveniet deserunt nesciunt. Deleniti, explicabo tempore.
+    </p>
+
+    <div class="social">
+        <i class="fa-solid fa-globe"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        
+    </div>
+
+    <div class="buttons">
+        <button class="btn message">Message</button>
+        <button class="btn connect">Connect</button>
+    </div>
+
+</div>
+
+<!-- Information Card -->
+<div class="info-card">
+
+    <div class="top">
+
+        <div class="small-profile">
+            <img src="../html practice/boy.jpg" alt="">
+        </div>
+
+        <div class="stats">
+            <div>
+                <p>Post</p>
+                <h3>123</h3>
+            </div>
+
+            <div>
+                <p>Followers</p>
+                <h3>32k</h3>
+            </div>
+
+            <div>
+                <p>Following</p>
+                <h3>20</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="profile-info">
+        <h2>tom curies</h2>
+        <p class="role">UI / UX Designer</p>
+    </div>
+
+    <div class="about">
+        <h3>About</h3>
+        <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam quos laborum natus nemo ipsa fuga voluptatibus aliquid facere necessitatibus illum reiciendis eius sed, commodi, ex magnam optio cupiditate dignissimos!
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
