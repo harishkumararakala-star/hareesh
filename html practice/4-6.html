@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<style>
+    .block{
+        display: block;
+        background-color: blueviolet;
+    }
+    .inline{
+        display: inline;
+        background-color: aqua;
+    }
+    .table{
+        display: table;
+        border: 2px solid green;
+    }
+    .c{
+        visibility: hidden;
+    }
+    .j{
+        visibility: collapse;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+    .flex{
+        display: flex;
+        gap: 60px;
+    }
+</style>
+<body>
+    <!-- display block -->
+    <div>
+    <div class="block">cat</div>
+    <div class="block">rat</div>
+    <div class="block">bat</div>
+    <div class="block">tat</div>
+    </div><br><br>
+    <!-- display inline -->
+    <div>
+        <div class="inline"></div>
+        <div class="inline">cat</div>
+    <div class="inline">rat</div>
+    <div class="inline">bat</div>
+    <div class="inline">tat</div>
+    </div><br><br>
+    <!-- table -->
+     <div class="table">
+     <div class="row">
+     <div class="cell">college</div>
+     <div class="cell">rank</div>
+     </div>
+     <div class="data">
+     <div class="cell">JNTUA</div>
+     <div class="cell">001</div>
+     </div>
+     </div><br><br>
+     <!-- visibility hidden -->
+      <div class="a">html</div>
+      <div class="b">java</div>
+      <div class="c">python</div>
+      <div class="d">core</div>
+      <div class="e">css</div><br><br>
+      <!-- visibility collapse -->
+       <div class="f">html</div>
+      <div class="g">java</div>
+      <div class="h">python</div>
+      <div class="i">core</div>
+      <div class="j">css</div>
+      <!-- grid -->
+       <div class="grid">
+        <div class="food">Gobhi rice</div>
+        <div class="food">mushroom rice</div>
+        <div class="food">jeera rice</div>
+        <div class="food">bagara rice</div>
+        <div class="food">color rice</div>
+       </div><br><br>
+       <!-- display flex -->
+        <div class="flex">
+        <div class="item">Gobhi rice</div>
+        <div class="item">mushroom rice</div>
+        <div class="item">jeera rice</div>
+        <div class="item">bagara rice</div>
+        <div class="item">color rice</div>
+       </div>
+</body>
+</html>
