@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <style>
+        nav {
+            background: linear-gradient(#41e620, #000814);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: rgb(3, 15, 233);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 40px;
+        }
+
+
+        .mnb {
+            background: #eee8f8;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .btn {
+            margin-top: 15px;
+            background: #540ad3;
+            color: white;
+            padding: 10px 20px;
+        }
+
+
+        .tittle {
+            background: #eef2ef;
+            text-align: center;
+        }
+
+        .skill-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .skill {
+            background: white;
+            width: 150px;
+            padding: 20px;
+            border-radius: 10px;
+            
+
+        }
+
+        .skill img {
+            width: 60px;
+        }
+
+        .projects {
+            background: #f8f4df;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+
+
+        .card button {
+            background: #673ab7;
+            color: white;
+        }
+
+
+        .contact {
+            background: #c8d3da;
+            padding: 20px;
+            text-align: center;
+            gap: 30px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #001f4d, #000814);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Resume</div>
+
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="mnb">
+
+        <img src="../html practice/boy.jpg" alt="boy image">
+
+        <div class="mnb-content">
+            <h1>Hi, I'm Alexander</h1>
+            <h3>WEB Developer</h3>
+
+            <p>
+                I build responsive and user-friendly websites
+                using HTML, CSS, JavaScript and modern tools.
+            </p>
+
+            <button class="btn">HIRE ME</button>
+        </div>
+
+    </section>
+
+
+    <section class="tittle">
+
+        <h2>MY SKILLS</h2>
+
+        <div class="skill-container">
+
+            <div class="skill">
+                <img src="../html practice/html.png">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill">
+                <img src="../html practice/css - Copy.png">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill">
+                <img src="../html practice/js-emblem-orange-shield-and-white-text-vector.jpg">
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill">
+                <img src="../html practice/bootstrap-logo-rounded-free-png.webp" alt="">
+                <h3>Bootstrap</h3>
+            </div>
+
+            <div class="skill">
+                <img src="../html practice/react-icon-on-white-square-button-free-png.webp" alt="">
+                <h3>React</h3>
+            </div>
+
+            <div class="skill">
+                <img src="../html practice/git.png" alt="">
+                <h3>Git</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="projects">
+
+        <h2>PROJECTS</h2>
+
+        <div class="project-container">
+
+            <div class="card">
+
+                <h3>Polavaram</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, fugiat..</p>
+                <button>VIEW PROJECT</button>
+            </div>
+
+            <div class="card">
+
+                <h3>polavaram</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, libero.</p>
+                <button>VIEW PROJECT</button>
+            </div>
+
+            <div class="card">
+
+                <h3>polavaram</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iure!</p>
+                <button>VIEW PROJECT</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+
+        <h2>CONTACT ME</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button>SEND MESSAGE</button>
+
+    </section>
+
+
+    <footer>
+        <p>© 2024 Alex gander. All Rights Reserved. <br>mnopqrs@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>
