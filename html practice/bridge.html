@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge155 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+        }
+
+        /* PAGE 1 */
+
+        .hero {
+            height: 100vh;
+            background: #d8d0c5;
+            background-image: url("../html practice/home-slider-1.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: contain;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: white;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: rgb(219, 15, 15);
+        }
+
+        .content {
+            position: absolute;
+            top: 150px;
+            left: 250px;
+            color: white;
+        }
+
+        .content h1 {
+            font-size: 80px;
+            line-height: 0.9;
+            animation: slideRight 1.5s ease;
+        }
+
+        .content p {
+            margin-top: 20px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            animation: slideRight 2s ease;
+        }
+
+
+
+        /* PAGE 2 */
+
+        .services {
+            padding: 120px 60px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background: #f8f8f5;
+        }
+
+        .card {
+            width: 22%;
+        }
+
+        .icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #efefea;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .card h2 {
+            font-size: 28px;
+            font-weight: 400;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            color: #777;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .abc {
+            text-align: center;
+            margin-top: 40px;
+            text-decoration: black;
+            font-style: italic;
+            padding-top: 40px;
+        }
+
+        .def {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .images img {
+            width: 40%;
+        }
+
+        .pqr {
+            height: 30%;
+        }
+
+        .gallary {
+            background-color: bisque;
+        }
+
+    
+    .mail{
+    background-image: url("https://bridge155.qodeinteractive.com/wp-content/uploads/2018/02/home-parallax-1-1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+.mail h1{
+    font-size: xxx-large;
+}
+.mail2 input{
+    
+    height: 50px;
+    width: 550px;
+    background:none;
+    color: white;
+    border-right: none;
+    border-color: white;
+}
+.mail2 button{
+    height: 56.5px;
+    width: 200px;
+    border-left: none;
+    border-color: white;
+} 
+
+.products h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.products p{
+text-align: center;
+margin-top:40px;
+margin-bottom: 40px;
+}
+.photos{
+ display: flex;
+ justify-content: space-between;
+ width: auto;
+height:400px;
+}
+.pic{
+    text-align: center;
+}
+.pic img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+.pic h3{
+    margin-top: 10px;
+}
+.pic p{
+    font-weight: bolder;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+
+    <section class="hero">
+
+        <nav class="navbar">
+
+            <div class="logo">Pottery</div>
+
+            <ul class="nav-links">
+                <li><a href="https://bridge155.qodeinteractive.com/">Home</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/about-us/">About</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/shop/">Shop</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/contact-us/">Contact</a></li>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+            </ul>
+        </nav>
+
+        </nav>
+
+        <div class="content">
+
+            <h1>
+                Exclusive<br>
+                Ceramics<br>
+                & Pottery Retailer
+            </h1>
+
+            <p>
+                WE MAKE UNIQUE THINGS WITH LOVE AND PASSION
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 2 -->
+
+    <section class="services">
+
+        <div class="card">
+
+            <img src="../html practice/custom-icon-1.png" alt="">
+
+
+            <h2>Pottery Classes</h2>
+
+            <p>
+                Adipiscing contentiones te sea,
+                at per vero oratio corrumpit.
+                Ne vocent impetus usu.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <img src="../html practice/custom-icon-2 - Copy.png" alt="">
+
+            <h2>Design Proces</h2>
+
+            <p>
+                Adipiscing contentiones te sea,
+                at per vero oratio corrumpit.
+                Ne vocent impetus usu.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <img src="../html practice/custom-icon-3 - Copy.png" alt="">
+
+
+            <h2>Gift Cards</h2>
+
+            <p>
+                Adipiscing contentiones te sea,
+                at per vero oratio corrumpit.
+                Ne vocent impetus usu.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <img src="../html practice/custom-icon-4.png" alt="">
+
+
+            <h2>Pottery Wheel</h2>
+
+            <p>
+                Adipiscing contentiones te sea,
+                at per vero oratio corrumpit.
+                Ne vocent impetus usu.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="gallary">
+        <h1 class="abc">OUR GALLLAY</h1>
+
+        <p class="def">Adipiscing contentiones te sea, at per vero oratio corrumpit. Ne vocent impetus usu. Eos hinc
+            <br>senserit et, eu eam nullam recusabo voluptatum.</p>
+        <div class="pqr">
+            <img src="../html practice/home-gallery-1.jpg" alt="">
+        </div>
+        <div class="images">
+            
+            <img src="../html practice/home-gallery-2.jpg" alt="">
+            <img src="../html practice/home-gallery-3.jpg" alt="">
+            <img src="../html practice/home-gallery-4.jpg" alt="">
+            <img src="../html practice/home-gallery-5.jpg" alt="">
+            <img src="../html practice/home-gallery-6.jpg" alt="">
+            <img src="../html practice/home-gallery-7.jpg" alt="">
+        </div>
+        <div class="mno">
+            <img src="../html practice/home-gallery-8.jpg" alt="">
+        </div>
+    </section>
+
+<section class="mail">
+    <h1>subscribe to Newsletter</h1>
+    <div class="mail2">
+        <input type="mail" placeholder="E-mail Address"><button type="button">subscribe</button>
+    </div>
+</section>
+<section class="products">
+<h1>LATEST PRODUCTS</h1>
+<p>Mei invenire periculis ei, offendit mediocrem ne sea, eos suas elitr everti ea</p>
+<div class="photos">
+    <div class="pic"><img src="../html practice/product-1-600x776.jpg" alt=""><h3>Colorful MUg</h3><p>$320.00</p></div>
+   <div class="pic"><img src="../html practice/product-2-600x776.jpg" alt=""><h3>Ceramic Vasc</h3><p>$400.00</p></div>
+    <div class="pic"><img src="../html practice/product-3-600x776.jpg" alt=""><h3>Sugar BOwl</h3><p>$250.00</p></div>
+    <div class="pic"><img src="../html practice/product-4-600x776.jpg" alt=""><h3>Ceramic Plate</h3><p>$300.00</p></div>
+</div>
+</section>
+</body>
+</html>

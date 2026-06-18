@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridge155 Clone</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+}
+
+/* PAGE 1 */
+
+.hero{
+    height:100vh;
+    background:#d8d0c5;
+    background-image:url("../html practice/home-slider-1.jpg");
+    background-repeat:no-repeat;
+    background-position:bottom center;
+    background-size:contain;
+    position:relative;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 60px;
+}
+
+.logo{
+    font-size:32px;
+    color:white;
+    font-style:italic;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#555;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:rgb(219, 15, 15);
+}
+
+.content{
+    position:absolute;
+    top:150px;
+    left:250px;
+    color:white;
+}
+
+.content h1{
+    font-size:80px;
+    line-height:0.9;
+    animation:slideRight 1.5s ease;
+}
+
+.content p{
+    margin-top:20px;
+    font-size:12px;
+    letter-spacing:2px;
+    animation:slideRight 2s ease;
+}
+
+
+
+/* PAGE 2 */
+
+.services{
+    padding:120px 60px;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    background:#f8f8f5;
+}
+
+.card{
+    width:22%;
+}
+
+.icon{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#efefea;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.card h2{
+    font-size:28px;
+    font-weight:400;
+    color:#444;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#777;
+    line-height:1.8;
+    font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<section class="hero">
+
+    <nav class="navbar">
+
+       <div class="logo">Pottery</div>
+
+        <ul class="nav-links">
+            <li><a href="https://bridge155.qodeinteractive.com/">Home</a></li>
+            <li><a href="https://bridge155.qodeinteractive.com/about-us/">About</a></li>
+            <li><a href="https://bridge155.qodeinteractive.com/shop/">Shop</a></li>
+            <li><a href="https://bridge155.qodeinteractive.com/contact-us/">Contact</a></li>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </ul>
+    </nav>
+
+    </nav>
+
+    <div class="content">
+
+        <h1>
+            Exclusive<br>
+            Ceramics<br>
+            & Pottery Retailer
+        </h1>
+
+        <p>
+            WE MAKE UNIQUE THINGS WITH LOVE AND PASSION
+        </p>
+
+    </div>
+
+</section>
+
+<!-- PAGE 2 -->
+
+<section class="services">
+
+    <div class="card">
+        <!-- <div class="icon"></div> -->
+          <img src="../html practice/custom-icon-1.png" alt="">
+
+
+        <h2>Pottery Classes</h2>
+
+        <p>
+            Adipiscing contentiones te sea,
+            at per vero oratio corrumpit.
+            Ne vocent impetus usu.
+        </p>
+    </div>
+
+    <div class="card">
+        <!-- <div class="icon"></div> -->
+         <img src="../html practice/custom-icon-1.png" alt="">
+
+        <h2>Design Proces</h2>
+
+        <p>
+            Adipiscing contentiones te sea,
+            at per vero oratio corrumpit.
+            Ne vocent impetus usu.
+        </p>
+    </div>
+
+    <div class="card">
+        <!-- <div class="icon"></div> -->
+          <img src="../html practice/custom-icon-1.png" alt="">
+
+
+        <h2>Gift Cards</h2>
+
+        <p>
+            Adipiscing contentiones te sea,
+            at per vero oratio corrumpit.
+            Ne vocent impetus usu.
+        </p>
+    </div>
+
+    <div class="card">
+        <!-- <div class="icon"></div> -->
+          <img src="../html practice/custom-icon-1.png" alt="">
+
+
+        <h2>Pottery Wheel</h2>
+
+        <p>
+            Adipiscing contentiones te sea,
+            at per vero oratio corrumpit.
+            Ne vocent impetus usu.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>
