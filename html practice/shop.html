@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+
+        body {
+            font-family: Georgia, serif;
+        }
+
+
+        .hero {
+            height: 70vh;
+            background: #d8d0c5;
+            font-size: xx-large;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: white;
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: flex;
+            
+        }
+
+        .nav-links a:hover {
+            color: rgb(219, 15, 15);
+        }
+        .content {
+           
+            color: white;
+           
+        }
+
+        .content h1 {
+            padding-top: 30px;
+            font-size: 80px;
+             text-align: center;
+            align-items: center; 
+            color:black;
+        }
+
+        .content p {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+            font-size: larger;
+            color: black;
+        
+        }
+        .shop-container{
+            padding-top: 20px;
+            padding-bottom: 20px;
+    display:flex;
+    gap:40px;
+}
+
+.products{
+    width:75%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.product{
+    text-align:center;
+    position:relative;
+}
+
+.product img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.product h3{
+    margin-top:15px;
+    font-size:28px;
+    font-weight:400;
+}
+
+.product p{
+    margin-top:8px;
+    color:#888;
+}
+
+.sale{
+    position:absolute;
+    top:15px;
+    left:15px;
+    width:55px;
+    height:55px;
+    background:#7fd3e5;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+}
+
+.sidebar{
+    width:25%;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.range{
+    width:100%;
+    margin:15px 0;
+}
+
+.btn{
+    background:#8b5a3c;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    cursor:pointer;
+    margin-bottom:40px;
+}
+
+.latest{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.latest img{
+    width:70px;
+    height:70px;
+    object-fit:cover;
+}
+
+.latest p{
+    margin-top:10px;
+}
+
+.sidebar ul{
+    list-style:none;
+    margin-top:15px;
+}
+
+.sidebar ul li{
+    margin:10px}
+    
+    .footer{
+    background:#e4af84;
+    color: #604b4b;
+    padding: 50px;
+}
+.footer-box li{
+    list-style: none;
+    padding: 10px;
+}
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+}
+
+.box h3{
+    margin-top: 20px;
+    text-align: center;
+}
+.footer-bottom{
+    text-align:left;
+     display: flex;
+     gap: 250px;
+     margin-top: 20px;
+}
+
+        </style>
+        </head>
+<body>
+<section class="hero">
+
+        <nav class="navbar">
+
+            <div class="logo"><img src="../html practice/logo (1).png" alt=""></div>
+
+            <ul class="nav-links">
+                <li><a href="https://bridge155.qodeinteractive.com/">Home</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/about-us/">About</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/shop/">Shop</a></li>
+                <li><a href="https://bridge155.qodeinteractive.com/contact-us/">Contact</a></li>
+                <a href="https://www.facebook.com/QodeInteractive/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/qodeinteractive/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/QodeInteractive"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://bridge155.qodeinteractive.com/cart/"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </ul>
+        </nav>
+<div class="content">
+
+            <h1>
+                Shop
+            </h1>
+
+             <p>
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            </p>
+
+        </div> 
+        <!-- <div class="heading">
+<h1 class="heading">about us</h1> -->
+</div>
+        </nav> </section>
+        <div class="shop-container">
+
+    <div class="products">
+
+        <div class="product">
+            <img src="../html practice/product-4-600x776.jpg" alt="">
+            <h3>Ceramic Plate</h3>
+            <p>$349.00</p>
+        </div>
+
+        <div class="product">
+            <img src="../html practice/product-4-600x776 - Copy.jpg" alt="">
+            <h3>Ceramic Plate Red</h3>
+            <p>$376.00</p>
+        </div>
+
+        <div class="product">
+            <img src="../html practice/product-3-600x776 - Copy.jpg" alt="">
+            <h3>Ceramic Vase</h3>
+            <p>$400.00</p>
+        </div>
+
+        <div class="product">
+            <span class="sale">SALE</span>
+            <img src="../html practice/product-2-600x776 - Copy.jpg" alt="">
+            <h3>Colorful Mug</h3>
+            <p><del>$250</del> $200</p>
+        </div>
+
+        <div class="product">
+            <img src="../html practice/product-2-600x776.jpg" alt="">
+            <h3>Orange Bowl</h3>
+            <p>$278.00</p>
+        </div>
+
+        <div class="product">
+            <span class="sale">SALE</span>
+            <img src="../html practice/product-1-600x776.jpg" alt="">
+            <h3>Sugar Bowl</h3>
+            <p><del>$250</del> $200</p>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+
+        <h2>Filter by Price</h2>
+
+        <input type="range" class="range">
+
+        <button class="btn">FILTER</button>
+
+        <h2>Latest Products</h2>
+
+        <div class="latest">
+            <img src="../html practice/product-1.jpg">
+            <div>
+                <p>Colorful Mug</p>
+                <small>$200.00</small>
+            </div>
+        </div>
+
+        <div class="latest">
+            <img src="../html practice/product-2-600x776.jpg">
+            <div>
+                <p>Ceramic Vase</p>
+                <small>$400.00</small>
+            </div>
+        </div>
+
+        <div class="latest">
+            <img src="../html practice/product-3-600x776.jpg">
+            <div>
+                <p>Sugar Bowl</p>
+                <small>$200.00</small>
+            </div>
+        </div>
+
+        <h2>Categories</h2>
+
+        <ul>
+            <li>Clay</li>
+            <li>Design</li>
+            <li>Vase</li>
+            <li>Plaster</li>
+            <li>Handcrafted</li>
+            <li>Vintage</li>
+        </ul>
+
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-box">
+        <h3>Customer service</h3>
+    <ul>
+        <li>Help&contact</li>
+        <li>Returns & Refunds</li>
+        <li>Oniline stores</li>
+        <li>Terms & Conditions</li>
+    </ul>
+    </div>
+    <div class="footer-box">
+        <h3>Company</h3>
+       <ul>
+        <li>About us</li>
+        <li>Blog</li>
+        <li>Order Tracking</li>
+        <li>FAQS</li>
+        <li>Contact</li>
+        <li>Login</li>
+    </ul> 
+    </div>
+    <div class="footer-box">
+        <h3>Social media</h3>
+       <ul>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>facebook</li>
+        <li>Youtube</li>
+    </ul> 
+    </div>
+    <div class="footer-box">
+        <h3>Archive</h3>
+       <ul>
+        <li>Clay</li>
+        <li>Design</li>
+        <li>New</li>
+        <li>Plaster</li>
+        <li>Vison</li>
+    </ul> 
+    </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+© 2026 Prime Minister of India. All Rights Reserved.
+
+<div class="vias">
+    <img src="../html practice/footer-bottom-image-1 (1).png" alt="">
+</div>
+<div class="title">
+    <span>FACEBOOK INSTAGRAM</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

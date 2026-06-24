@@ -4,21 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge </title>
+    <title>about </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-
+        
         body {
             font-family: Georgia, serif;
         }
 
 
         .hero {
-            height: 100vh;
+            height: 70vh;
             background: #d8d0c5;
-            background-image: url("../html practice/home-slider-1.jpg");
-            background-size: cover;
-        
+            font-size: xx-large;
+            position: relative;
         }
 
         .navbar {
@@ -46,6 +45,7 @@
             font-size: 12px;
             letter-spacing: 2px;
             text-transform: uppercase;
+            display: flex;
         }
 
         .nav-links a:hover {
@@ -53,19 +53,22 @@
         }
 
         .content {
-            position: absolute;
-            top: 150px;
-            left: 250px;
             color: white;
         }
 
         .content h1 {
             font-size: 80px;
+             text-align: center;
+            align-items: center; 
+            color:black;
         }
 
         .content p {
             margin-top: 20px;
             font-size: 12px;
+            text-align: center;
+            font-size: larger;
+            color: black;
         
         }
 
@@ -165,38 +168,6 @@
     border-color: white;
 } 
 
-.products h1{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.products p{
-text-align: center;
-margin-top:40px;
-margin-bottom: 40px;
-}
-.photos{
- display: flex;
- justify-content: space-between;
- width: auto;
-height:400px;
-}
-
-.pic{
-    text-align: center;
-}
-.pic img{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-}
-.pic h3{
-    margin-top: 10px;
-}
-.pic p{
-    font-weight: bolder;
-}
-
  .footer{
     background:#e4af84;
     color: #604b4b;
@@ -220,6 +191,28 @@ height:400px;
      display: flex;
      gap: 250px;
      margin-top: 20px;
+}
+.heading{
+    font-size: xx-large;
+}
+.what{
+    display: flex;
+    align-items: center;
+    background-color: #e4af84;
+    font-size: larger;
+    gap: 20px;
+}
+
+.what img{
+    width: 60%;
+}
+.con{
+    display: flex;
+    flex-direction: column;
+}
+.con h1{
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 </style>
 </head>
@@ -247,22 +240,30 @@ height:400px;
 
         </nav>
 
-        <div class="content">
-<img src="../html practice/pottery-graphic-slider-01.png" alt="">
+         <div class="content">
+<!-- <img src="../html practice/pottery-graphic-slider-01.png" alt=""> -->
             <h1>
-                Exclusive<br>
-                Ceramics<br>
-                & Pottery Retailer
+                About us
             </h1>
 
-            <p>
-                WE MAKE UNIQUE THINGS WITH LOVE AND PASSION
+             <p>
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
             </p>
 
-        </div>
-
+        </div> 
+        <!-- <div class="heading">
+<h1 class="heading">about us</h1> -->
+</div>
     </section>
 
+    <section class="what">
+        <div class="con">
+        <h1>What we do</h1>
+        <p>Mei invenire periculis ei, offendit mediocrem ne sea, eos suas elitr <br> everti ea. Per vidit rebum quodsi id. Pericula interpretaris ea pri,<br> prima conguen terpretaris prim. Ipsum, nec sagittis sem nibh id elit. <br> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. <br><br><br>
+Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor <br> accumsan ipsum velit
+m</p></div>
+<img src="../html practice/about-single-image-1.jpg" alt="">
+    </section>
     
 
     <section class="services">
@@ -324,27 +325,7 @@ height:400px;
 
     </section>
 
-    <section class="gallary">
-        <h1 class="abc">OUR GALLLAY</h1>
-
-        <p class="def">Adipiscing contentiones te sea, at per vero oratio corrumpit. Ne vocent impetus usu. Eos hinc
-            <br>senserit et, eu eam nullam recusabo voluptatum.</p>
-        <div class="pqr">
-            <img src="../html practice/home-gallery-1.jpg" alt="">
-        </div>
-        <div class="images">
-            
-            <img src="../html practice/home-gallery-2.jpg" alt="">
-            <img src="../html practice/home-gallery-3.jpg" alt="">
-            <img src="../html practice/home-gallery-4.jpg" alt="">
-            <img src="../html practice/home-gallery-5.jpg" alt="">
-            <img src="../html practice/home-gallery-6.jpg" alt="">
-            <img src="../html practice/home-gallery-7.jpg" alt="">
-        </div>
-        <div class="mno">
-            <img src="../html practice/home-gallery-8.jpg" alt="">
-        </div>
-    </section>
+    
 
 <section class="mail">
     <h1>subscribe to Newsletter</h1>
@@ -352,16 +333,7 @@ height:400px;
         <input type="mail" placeholder="E-mail Address"><button type="button">subscribe</button>
     </div>
 </section>
-<section class="products">
-<h1>LATEST PRODUCTS</h1>
-<p>Mei invenire periculis ei, offendit mediocrem ne sea, eos suas elitr everti ea</p>
-<div class="photos">
-    <div class="pic"><a href="https://bridge155.qodeinteractive.com/product/colorful-mug/" target="_blank"><img src="../html practice/product-1-600x776.jpg" alt=""></a><h3>Colorful MUg <br> $320.00</h3></a></div>
-   <div class="pic"><a href="https://bridge155.qodeinteractive.com/product/ceramic-vase/" target="_blank"><img src="../html practice/product-2-600x776.jpg" alt=""></a><h3>Ceramic Vasc <br>$400.00</h3></div>
-    <div class="pic"><a href="https://bridge155.qodeinteractive.com/product/sugar-bowl/" target="_blank"><img src="../html practice/product-3-600x776.jpg" alt=""></a><h3>Sugar BOwl <br>$250.00</h3></div>
-    <div class="pic"><a href="https://bridge155.qodeinteractive.com/product/ceramic-plate/" target="_blank"><img src="../html practice/product-4-600x776.jpg" alt=""></a><h3>Ceramic Plate <br>$300.00</h3></div>
-</div>
-</section>
+
 <footer class="footer">
     <div class="footer-top">
         <div class="footer-box">
