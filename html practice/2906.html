@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+
+body{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    background:#f0f0f0;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    transition:all 1s ease;
+    
+}
+
+
+.circle1{
+    background:tomato;
+}
+
+
+.circle1:hover{
+    transform:translateY(80px);
+    background:gold;
+}
+
+.circle2{
+    background:royalblue;
+}
+
+.circle2:hover{
+    transform:translateX(100px) skew(20deg) scale(0.8);
+    background:limegreen;
+}
+.circle3{
+    background:red;
+}
+
+.circle4{
+    background:blue;
+}
+
+.circle3:hover{
+    transform:translateX(150px) scale(1.5);
+}
+
+.circle4:hover{
+    transform:translateX(-150px) scale(1.75);
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="circle circle1"></div>
+    <div class=" circle circle2"></div>
+     <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+</div>
+
+</body>
+</html>
