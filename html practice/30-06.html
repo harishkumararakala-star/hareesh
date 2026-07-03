@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBN TDP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#fff;
+}
+
+header{
+    width:100%;
+    height:80px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    position:sticky;
+}
+
+.logo img{
+    width:100px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-size:16px;
+    font-weight:600;
+   
+}
+
+nav ul li a:hover{
+    color:#f39c12;
+}
+
+.icons{
+    display:flex;
+    gap:15px;
+}
+
+.icons i{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+
+}
+
+.icons i:hover{
+    background:#f39c12;
+    color:#fff;
+}
+.hero{
+    width:100%;
+    height:100vh;
+    background:url("../html practice/cbn-min.jpg");
+    background-size: cover;
+    position:relative;
+    display:flex;
+    align-items:center;
+    padding-left:80px;
+}
+
+
+.hero-content{
+    position:relative;
+    color:#fff;
+    max-width:600px;
+    z-index:2;
+}
+
+.hero-content h4{
+    font-size:24px;
+    margin-bottom:10px;
+    color: black;
+    
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:30px;
+    color: black;
+}
+
+.btn{
+
+    text-decoration:none;
+    background:#f4b400;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:bold;
+    
+}
+
+.btn:hover{
+    background:#d99a00;
+    color: aqua;
+}
+.latest-news{
+    width:90%;
+    margin:70px auto;
+}
+
+.title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.title h2{
+    font-size:30px;
+    color:#555;
+}
+
+.title a{
+    text-decoration:none;
+    color:#666;
+    font-weight:bold;
+}
+
+.news-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.news-card{
+    width:24%;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:5px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.news-card:hover{
+     transform:scale(1.1);
+}
+
+.news-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.news-content{
+    padding:15px;
+}
+
+.news-content h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.news-content p{
+    font-size:15px;
+    color:#777;
+    margin-bottom:15px;
+}
+.photo-section{
+    width:90%;
+    margin:70px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.gallery{
+    width:70%;
+}
+
+.gallery-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.gallery-header h2{
+    font-size:32px;
+    font-weight:bold;
+    color:#444;
+}
+
+.gallery-header a{
+    text-decoration:none;
+    color:#555;
+    font-weight:600;
+}
+
+.gallery-row{
+    display:flex;
+    gap:20px;
+}
+
+.photo-card{
+    width:32%;
+    position:relative;
+    overflow:hidden;
+    border-radius:5px;
+}
+
+.photo-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+}
+
+.caption{
+    position:absolute;
+    background:rgba(0,0,0,.65);
+    color:#fff;
+    padding:15px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.twitter-box{
+    width:30%;
+    border-left:1px solid #ddd;
+    padding-left:20px;
+}
+
+.twitter-box img{
+    width:100%;
+}
+
+.twitter-box button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    background:#ca1414;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.twitter-box button:hover{
+    background:#d5d5d5;
+    color: #f4b400;
+}
+.latest{
+    width:90%;
+    margin:70px auto;
+}
+.hint{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.hint h2{
+    font-size:30px;
+    color:#555;
+}
+
+.hint a{
+    text-decoration:none;
+    color:#666;
+    font-weight:bold;
+}
+.pqr{
+    width:90%;
+    margin:70px auto;
+}
+
+.abc{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.abc h2{
+    font-size:30px;
+    color:#555;
+}
+
+.abc a{
+    text-decoration:none;
+    color:#666;
+    font-weight:bold;
+}
+
+.def{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.ghi{
+    width:24%;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:5px;
+    overflow:hidden;
+    
+}
+
+
+.ghi img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.jkl{
+    padding:15px;
+}
+
+.jkl h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.jkl p{
+    font-size:15px;
+    color:#777;
+    margin-bottom:15px;
+}
+.lop{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.lop h4{
+    font-size: xx-large;
+    color: #430ba4;
+    margin-left: 80px;
+
+}
+.lop img{
+    width: 100%;
+}
+.lop p{
+    color: black;
+    margin-left: 80px;
+}
+
+.footer{
+    width:100%;
+    background:#222;
+    color:#fff;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:50px;
+}
+
+.footer-left{
+    font-size:18px;
+}
+
+.footer-right{
+    display:flex;
+    gap:15px;
+}
+
+.footer-right a{
+    width:45px;
+    height:45px;
+    border:1px solid #777;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-right a:hover{
+    background:#f0b400;
+    border-color:#f0b400;
+    color:#000;
+}
+</style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="../html practice/logo 000.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">Achivement</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallary</a></li>
+            
+            </ul>
+        </nav>
+
+        <div class="icons">
+           <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div class="search-box">
+        <input type="text" placeholder="Search here...">
+        <button>🔍</button>
+    </div>
+        </div>
+
+    </header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h4>Welcome to</h4>
+        <h4>Nara Chandrababu Naidu is an Indian politician hailed for his futuristic outlook.</h4>
+        <p>
+            National President of Telugu Desam Party and Chief Minister of Andhra Pradesh.
+        </p>
+
+        <a href="https://www.google.com/search?sca_esv=0ea2b7b536b19483&sxsrf=APpeQnsgkAPO2YvPhP2AOKX5_DbXdA8KTw:1782811199941&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9zZ67Faapx8wIWp8O3JpX8ZbooJTg6IC0i9eLmD380spFxNnOkLL2PutNy6eMVF_wEM4-gfqmM78IxB34RK6YTsKKHIT_AzAgLMyJ1gpf4P_j_OXPJLIwTXIL1-FZEJMhV1oLtseLaSi8XmwElB7vHVSA2AJA&q=cbn+pics&sa=X&sqi=2&ved=2ahUKEwjTpZii0a6VAxUsRmcHHVugDeoQtKgLegQIExAB&biw=1280&bih=593&dpr=1.5#sv=CAMSURoyKhBlLS01ZWtxeVhBYU9FVEhNMg4tNWVrcXlYQWFPRVRITToOazNfN0k5aHV5eTk2SE0gBCoXCgFzEhBlLS01ZWtxeVhBYU9FVEhNGAEwARgHIIL5wr8OSggQARgBIAEoAQ" target="_blank" class="btn">Know More</a>
+    </div>
+
+</section>
+<section class="latest-news">
+
+    <div class="title">
+        <h2>LATEST NEWS</h2>
+        <a href="#">VIEW ALL</a>
+    </div>
+
+    <div class="news-container">
+
+        <div class="news-card">
+            <img src="../html practice/999.jpeg" alt="">
+            <div class="news-content">
+                <h3>Chandrababu Naidu gets anticipatory bail in IRR, sand mining and liquor cases</h3>
+                <p>Deccan Herald | January 2, 2024</p>
+                NEWS
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="../html practice/987.jpeg" alt="">
+            <div class="news-content">
+                <h3>Cyclone Michaung: YSRCP govt failed to prevent large-scale destruction of crops, alleges Chandrababu Naidu</h3>
+                <p>The Hindu | January 11, 2025</p>
+                NEWS
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="../html practice/909.jpeg" alt="">
+            <div class="news-content">
+                <h3>Chandrababu Naidu flags ‘serious lapses’ in draft electoral rolls in Andhra Pradesh</h3>
+                <p>The Hindu | December 8, 2025</p>
+                NEWS
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="../html practice/090.jpeg" alt="">
+            <div class="news-content">
+                <h3>Rousing reception to Chandrababu Naidu at Begumpet airport in Hyderabad</h3>
+                <p>The Hindu | December 9, 2025</p>
+                NEWS
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="photo-section">
+
+    <div class="gallery">
+
+        <div class="gallery-header">
+            <h2>PHOTO GALLERY</h2>
+            <a href="#">VIEW ALL</a>
+        </div>
+
+        <div class="gallery-row">
+
+            <div class="photo-card">
+                <img src="../html practice/img01.jpg" alt="">
+                <div class="caption">
+                    Chandrababu Naidu at Party Office, Telugu Desam Party
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="../html practice/img02.jpg" alt="">
+                <div class="caption">
+                    NCBN at the first swearing-in of NTR
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="../html practice/img06.jpg" alt="">
+                <div class="caption">
+                    NCBN as a student at SV University
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="twitter-box">
+
+        <img src="../html practice/NTR-Shows-His-Affection-Towards--Mavayya--CBN--1642512799-1276.jpg" alt="Twitter Feed">
+
+        <button>Load More</button>
+
+    </div>
+
+</section>
+<section class="pqr">
+
+    <div class="abc">
+        <h2>ACHIVEMENTS</h2>
+        <a href="#">VIEW ALL</a>
+    </div>
+
+    <div class="def">
+
+        <div class="ghi">
+            <img src="../html practice/vizag.jpg" alt="">
+            <div class="jkl">
+                <h3>Vizag to emerge as hub of new age technologies.</h3>
+                <p>Deccan Herald | January 2, 2024</p>
+                NEWS
+            </div>
+        </div>
+
+        <div class="ghi">
+            <img src="../html practice/item01-1.jpg" alt="">
+            <div class="jkl">
+                <h3>‘CEO’ CM who superseded his famous father-in-law</h3>
+                <p>The Hindu | January 11, 2025</p>
+                NEWS
+            </div>
+        </div>
+
+        <div class="ghi">
+            <img src="..//html practice/genome-valley.jpg" alt="">
+            <div class="jkl">
+                <h3>How Naidu’s Genome Valley Initiative helped Create Covaxin</h3>
+                <p>The Hindu | December 8, 2025</p>
+                NEWS
+            </div>
+        </div>
+
+        <div class="ghi">
+            <img src="../html practice/Chandrababu-Naidu-at-Blockchain-Conference-in-Vizag.jpg" alt="">
+            <div class="jkl">
+                <h3>How Andhra Pradesh Is Emerging As India’s Blockchain Hub</h3>
+                <p>The Hindu | December 9, 2025</p>
+                NEWS
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="lop">
+<div class="lop1">
+    <img src="../html practice/HD-wallpaper-chandrababu-naidu-tdp-nara-lokesh-ntr-thumbnail.jpg" alt="">
+</div>
+<div class="lop2">
+    <h4>AP AgTech Summit 2017 </h4>
+<p>Thanking my friend @BillGates for attending the valedictory ceremony at #Agtech <br>
+Speaking at the valedictory of the three-day AP Ag Tech Summit-2017, CM Naidu said,<br> “I don’t ask money from the American billionaire and philanthropist. I am appealing to Bill Gates to help AP government <br> in terms of technology support in agriculture sector, nutrition for everyone and health sector.”</p>
+</div>
+</section>
+<footer class="footer">
+
+    <div class="footer-left">
+        © 2026 Copyright © CBN 2025. All rights reserved.
+    </div>
+
+    <div class="footer-right">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+</footer>
+</body>
+</html>
