@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Classes</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+/* Hover */
+.hover-btn{
+    padding:10px 20px;
+    background:blue;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.hover-btn:hover{
+    background:red;
+}
+
+/* Active */
+.active-btn{
+    padding:10px 20px;
+    background:green;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.active-btn:active{
+    background:orange;
+}
+
+/* Focus */
+input:focus{
+    border:3px solid blue;
+    color: brown;
+}
+
+/* Link */
+a:link{
+    color:blue;
+}
+
+/* Visited */
+a:visited{
+    color:purple;
+}
+
+/* First Child */
+.first p:first-child{
+    color:red;
+    font-weight:bold;
+}
+
+/* Last Child */
+.last p:last-child{
+    color:green;
+    font-weight:bold;
+}
+
+/* Nth Child */
+.list li:nth-child(2){
+    color:orange;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<h2>hover</h2>
+<button class="hover-btn">Hover Me</button>
+
+<hr>
+
+<h2>active</h2>
+<button class="active-btn">Click Me</button>
+
+<hr>
+
+<h2>focus</h2>
+<input type="text" placeholder="Click here">
+
+<hr>
+
+<h2>link and :visited</h2>
+<a href="https://www.google.com" target="_blank">Open Google</a>
+
+<hr>
+
+<h2>first-child</h2>
+<div class="first">
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+</div>
+
+<hr>
+
+<h2>last-child</h2>
+<div class="last">
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Last Paragraph</p>
+</div>
+
+<hr>
+
+<h2>nth-child(2)</h2>
+<ul class="list">
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Banana</li>
+    <li>Orange</li>
+</ul>
+
+</body>
+</html>

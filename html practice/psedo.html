@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>opptykart </title>
+<style>
+    *{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f1f3f6;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#2874f0;
+padding:15px 40px;
+}
+
+.logo{
+color:white;
+font-size:30px;
+font-weight:bold;
+}
+
+header input{
+width:300px;
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+header input:focus{
+color: red;
+background-color:greenyellow;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:18px;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+nav a:visited{
+color:white;
+}
+
+/* Cards */
+
+.products{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:50px;
+flex-wrap:wrap;
+}
+.card{
+width:250px;
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+position:relative;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px gray;
+}
+
+.card:first-child{
+border:3px solid orange;
+}
+
+.card:last-child{
+border:3px solid green;
+}
+
+.card:nth-child(2){
+background:white#f61691;
+}
+
+.card:nth-child(3){
+background:#f9ffff;
+}
+
+.card img{
+width:150px;
+height:150px;
+}
+
+.card h2{
+margin:15px 0;
+}
+
+.card p{
+font-size:15px;
+color:gray;
+}
+
+.price{
+margin:15px 0;
+}
+
+.offer{
+color:red;
+font-size:24px;
+font-weight:bold;
+}
+
+button{
+padding:10px 25px;
+background:#ff9800;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+transition:.4s;
+}
+
+button:hover{
+background:#fb641b;
+}
+
+button:active{
+    background-color: aqua;
+}
+
+
+/* Footer */
+
+footer{
+background:#172337;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">opptyKart</div>
+<div class="Product">
+    <input type="text" placeholder="Search Products">
+</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="products">
+
+<div class="card">
+
+<img src="images/headphone.png">
+<h2>boAt Rockerz 413</h2>
+<p>Wireless Headphones with 40mm Drivers, ENx Tech & 60H Playback</p>
+
+<div class="price">
+<span class="offer">₹1599</span>
+<del>₹2000</del>
+</div>
+
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+
+<img src="images/headphone.png">
+<h2>boAt Airdopes</h2>
+<p>Bluetooth Earbuds with Beast Mode and Fast Charging</p>
+
+<div class="price">
+<span class="offer">₹1299</span>
+<del>₹1800</del>
+</div>
+
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+
+<img src="images/headphone.png">
+<h2>Noise Headphones</h2>
+<p>Premium Sound Quality with Deep Bass Technology</p>
+
+<div class="price">
+<span class="offer">₹1899</span>
+<del>₹2500</del>
+</div>
+
+<button>Buy Now</button>
+</div>
+
+<div class="card">
+
+<img src="images/headphone.png">
+<h2>Sony Headphones</h2>
+<p>Wireless Noise Cancellation Headphones</p>
+
+<div class="price">
+<span class="offer">₹2999</span>
+<del>₹3999</del>
+</div>
+
+<button>Buy Now</button>
+</div>
+
+</section>
+
+<footer>
+Copyright © 2026 | Harish Royal
+</footer>
+
+</body>
+</html>
